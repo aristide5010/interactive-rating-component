@@ -1,0 +1,157 @@
+:root {
+    --color-lightGrey: hsl(217, 12%, 63%);
+    --color-mediumGrey: hsl(216, 12%, 54%);
+    --color-darkBlue: hsl(213, 19%, 18%);
+    --color-veryDarkBlue: hsl(216, 12%, 8%);
+    --color-orange: hsl(25, 97%, 53%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: var(--color-veryDarkBlue);
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+#rate-card {
+    background: linear-gradient(hsl(217, 24%, 15%),hsl(220, 24%, 12%));
+    margin: 0 24%;
+    padding: 4%;
+    border-radius: 30px;
+    
+    @media (max-width: 660px) {
+        width: 17.5em;
+        margin: 0 auto;
+        padding: 10%;
+        border-radius: 15px;
+    }
+}
+
+.star {
+    display: flex;
+    background: var(--color-darkBlue);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-bottom: 2em;
+    padding: 15px;
+
+    @media (max-width: 660px) {
+        margin-bottom: 1em;;
+    }
+}
+
+#rate-card h1, #ty-card h1 {
+    font-size: 1.7em;
+    font-weight: 700;
+
+    @media (max-width: 660px) {
+        font-size: 1.5em;
+    }
+}
+
+#rate-card p, #ty-card p {
+    margin: 3% 0 0;
+    font-size: 0.938em;
+    line-height: 1.6em;
+    color: var(--color-lightGrey);
+
+    @media (max-width: 660px) {
+        font-size: 0.88em;
+    }
+}
+
+.notes {
+    display: flex;
+    justify-content: space-between;
+    border: none
+}
+
+.chiffre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-darkBlue);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin: 2em 0;
+    padding: 15px;
+
+    @media (max-width: 660px) {
+        margin: 1.5em 0;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+input {
+    display: none;
+}
+input:checked + div {
+    background: var(--color-orange);
+    color: white;
+}
+
+#bouton {
+    display: flex;
+    justify-content: center;
+    background: var(--color-orange);
+    padding: 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+
+    @media (max-width: 660px) {
+        font-size: 0.8em;
+        padding: 14px;
+    }
+}
+#rate-card #bouton:hover {
+    background: white;
+    color: var(--color-orange);
+    cursor: pointer;
+}
+
+
+
+
+#ty-card {
+    background: linear-gradient(hsl(217, 24%, 15%),hsl(220, 24%, 12%));
+    margin: 0 22.5%;
+    padding: 6% 4.5%;
+    border-radius: 30px;
+    text-align: center;
+
+    @media (max-width: 660px) {
+        width: 17.5em;
+        margin: 0 auto;
+        padding: 12% 10%;
+        border-radius: 15px;
+    }
+}
+
+#ty-card #rating {
+    width: 50%;
+    padding: 8px 10px 4px;
+    margin: 7.5% auto 10%;
+    background: hsl(216, 12%, 22%);
+    font-size: 0.938em;
+    color: var(--color-orange);
+    opacity: 0.7;
+    border-radius: 20px;
+
+    @media (max-width: 660px) {
+        width: 55%;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main>
+    <div id="rate-card">
+      <div class="star">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <h1>How did we do?</h1>
+      <p class="paragraphe">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+      <fieldset class="notes">
+        <input type="radio" id="un" name="notes" value="1"/>
+        <div class="chiffre">
+          <label for="un">1</label>
+        </div>
+        <input type="radio" id="deux" name="notes" value="2"/>
+        <div class="chiffre">
+          <label for="deux">2</label>
+        </div>
+        <input type="radio" id="trois" name="notes" value="3"/>
+        <div class="chiffre">
+          <label for="trois">3</label>
+        </div>
+        <input type="radio" id="quatre" name="notes" value="4"/>
+        <div class="chiffre">
+          <label for="quatre">4</label>
+        </div>
+        <input type="radio" id="cinq" name="notes" value="5"/>
+        <div class="chiffre">
+          <label for="cinq">5</label>
+        </div>
+      </fieldset>
+      <a id="bouton">Submit</a>
+    </div>  
+
+    <div id="ty-card">
+      <img src="images/illustration-thank-you.svg" alt="">
+      <div id="rating"></div>
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don't hesitate to get in touch!</p>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
